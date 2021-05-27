@@ -1,0 +1,175 @@
+1.using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Hello World");
+	}
+}
+
+
+2.using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x,y;
+		Console.WriteLine(" enter the value of x:");
+		x=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine(" enter the value of Y:");
+		y=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("(x-Y)" +(x-y));
+		Console.ReadLine();
+		Console.WriteLine("(x/Y)" +(x/y));
+		Console.ReadLine();
+		Console.WriteLine("(x*Y)" +(x*y));
+		Console.ReadLine();
+		
+		
+		
+		
+		
+	}
+}
+
+3.create a prg whether person eligble for voting or not
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int age;
+		Console.WriteLine("enter the age of the person");
+		age=Convert.ToInt32(Console.ReadLine());
+		if(age>=18)
+		{
+			Console.WriteLine("pesrson is eligible");
+		}
+		else
+		{
+			Console.WriteLine("person is not eligible");
+		}
+		Console.ReadLine();
+			
+		
+	}
+}
+
+
+4.
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int age;
+		Console.WriteLine("enter the age of the person");
+		age=Convert.ToInt32(Console.ReadLine());
+		if(age>60)
+		{
+			Console.WriteLine("seneior citizen");
+		}
+		
+		else if((age>=18) && (age<=60))
+		{
+			Console.WriteLine("pesrson is eligible");
+		}
+		else if(age<18)
+		{
+			Console.WriteLine("person is not eligible");
+		}
+		Console.ReadLine();
+			
+		
+	}
+}
+
+5.maximum o fthree numbers
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x,y,z;
+		Console.WriteLine("enter the value of x");
+		x=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("enter the value of y");
+		y=Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("enter the value of Z");
+		z=Convert.ToInt32(Console.ReadLine());
+		
+		if((x>z)&&(x>y))
+		{
+			Console.WriteLine(x +  "is maximum of given number");
+		}
+		
+		else if((y>x)&&(y>z))
+		{
+			Console.WriteLine(y +  "is maximum of given numbers");
+		}
+		else
+		{
+			Console.WriteLine( z +   "is maximum of given numbers");
+		}
+		Console.ReadLine();
+			
+		
+	}
+}
+
+
+6.using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int Number;
+		Console.WriteLine("enter the Number");
+		Number=Convert.ToInt32(Console.ReadLine());
+		
+		
+		if(Number==1)
+		{
+			Console.WriteLine("one");
+		}
+		
+		else if(Number==2)
+		{
+			Console.WriteLine("two");
+		}
+		else if(Number==3)
+		{
+			Console.WriteLine("three");
+			
+		}
+		else if(Number==4)
+		{
+			Console.WriteLine("four");
+	
+			
+		}
+		else if (Number==5)
+		{
+			Console.WriteLine("five");
+			
+		}
+		else
+		{
+			Console.WriteLine("please enter value between 1 to 5");
+		}
+		Console.ReadLine();
+			
+		
+	}
+}
+
+
+
