@@ -1,0 +1,17 @@
+using System;
+public class Program 
+  {
+  public  static void Main(string[] args)
+   {
+
+//const int i= 2;
+//var i = "2";
+// var i = 2.200; 
+//i= Convert.ToInt32("3");
+
+dynamic i = 2;
+i = "Vikash";
+Console.WriteLine(i);
+Console.ReadLine();
+  }
+}

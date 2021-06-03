@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day_3
+{
+
+    class Person 
+    {
+        public int age;
+        public void greet()
+        {
+            Console.WriteLine("Hello");
+        }
+        public void setAge(int age)
+        {
+           this.age =age;
+        }
+    }
+    class Student:Person
+    {
+        public void study()
+        {
+            Console.WriteLine("...I'm studying...");
+        }
+        public void showAge()
+        {
+            Console.WriteLine("My age is :"+age+" years");
+        }
+    }
+    class Professor:Person
+    {
+        public void explain()
+        {
+            Console.WriteLine("I'm explaining on the screen...");
+        }
+  
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person p = new Person();
+            p.greet();
+            Console.WriteLine("Enter th age of the person: ");
+            int age1 = Convert.ToInt32(Console.ReadLine());
+            Student s = new Student();
+            s.setAge(age1);
+            s.showAge();
+            Professor pr = new Professor();
+            pr.greet();
+            Console.WriteLine("Enter th age of the person: ");
+            int age2 = Convert.ToInt32(Console.ReadLine());
+            pr.setAge(age2);
+            pr.explain();
+            Console.ReadLine();
+        }
+    }
+}

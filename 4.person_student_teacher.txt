@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day_3
+{
+    class Class10
+    {
+        public static void Main()
+        {
+            Student s = new Student("Manoj");
+            s.study();
+            Teacher t = new Teacher("Ravi");
+            t.explain();
+            Console.ReadLine();
+            
+        }
+    }
+    class Person
+    {
+        String name;
+        public Person(String name)
+        {
+            this.name = name;
+
+        }
+   
+        public override string ToString()
+        {
+            return name;
+        }
+      
+
+    }
+    class Student : Person
+    {
+        public void study()
+        {
+            Console.WriteLine("Student "+ base.ToString()+" is Studying..");
+        }
+
+         public Student(String s):base(s){ }
+    }
+    class Teacher : Person
+    {
+            public void explain()
+            {
+                Console.WriteLine("The Teacher "+base.ToString()+" is explaining..");
+            }
+            public Teacher(String s) : base(s) { }
+    }
+}

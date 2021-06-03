@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day_3
+{
+    class Class12
+    {
+        public static void Main()
+        {
+            Employee.Counter = 6;
+            Employee emp1 = new Employee();
+            Employee emp2 = new Employee();
+            Employee emp3 = new Employee();
+
+            Console.WriteLine(Employee.Counter);
+            Console.ReadLine();
+        }
+    }
+    class Employee
+    {
+        private static int empId;
+        public Employee()
+        {
+            empId++;
+        }
+        public static int Counter
+        {
+            get;
+            set;
+        }
+    }
+ }
+

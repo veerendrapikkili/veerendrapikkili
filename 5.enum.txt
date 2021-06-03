@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public enum calculation
+    { 
+        Addition ,substraction,Multiplication,Divission
+    }
+    class Class2
+    {
+        public static void Main()
+        {
+            foreach (var item in Enum.GetValues(typeof(calculation)))
+            {
+                Console.WriteLine(((int)item)+"  "+item);
+            }
+
+         //   var arr = Enum.GetValues(typeof(Choiceenum));
+         //   for (int i = 0; i < arr.Length; i++)
+         //  {​​​​​​​
+         //      Console.WriteLine(arr.GetValue(i));
+         //   }​​​​​​​
+            Console.WriteLine("Enter your Choice:");
+            int choice =Convert.ToInt32( Console.ReadLine());
+            Console.WriteLine("Enter First number: ");
+            int a= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Second number number: ");
+            int b= Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case (int)calculation.Addition:
+                    Console.WriteLine("Addition of 2  numbers is"+(a+b));
+                    break;
+                case (int)calculation.substraction:
+                    Console.WriteLine("Substraction of 2  numbers is" + (a - b));
+                    break;
+                case (int)calculation.Multiplication:
+                    Console.WriteLine("Multiplication of 2  numbers is" + (a * b));
+                    break;
+                case (int)calculation.Divission:
+                    Console.WriteLine("Division of 2  numbers is" + (a / b));
+                    break;
+                default:
+                    Console.WriteLine("Incorrecct option");
+                    break;
+            }
+            Console.ReadLine();
+        }
+   
+    }
+}

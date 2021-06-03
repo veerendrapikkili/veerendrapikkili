@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    class MyException : Exception
+    {
+        public MyException(String msg) : base(msg) { }
+    }
+
+    class cal
+    { 
+        public void result(int age)
+        {
+            if (age < 18)
+            {
+                throw new MyException("Below 18 : You can't Vote");
+            }
+            else {
+                Console.WriteLine("You can vote");
+            }
+        }
+    }
+    class Class5
+    {
+        public static void Main() { 
+        cal c = new cal();
+        Console.WriteLine("Enter your age:");
+         int age=Convert.ToInt32(  Console.ReadLine());
+            try { c.result(age); }
+            catch (MyException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+            Console.WriteLine("Thank You");
+            Console.ReadLine();
+        }
+        
+    }
+}

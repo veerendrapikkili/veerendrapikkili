@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the String:");
+		String s=Console.ReadLine();
+		int result;
+		int.TryParse(s,out result);
+		if(result>0)
+		{
+		Console.WriteLine("You enterd the number: " +result);		
+		}
+		else
+		{
+				Console.WriteLine("It is not a number");
+		}
+	}
+}

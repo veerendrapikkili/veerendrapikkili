@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace cSharp
+{
+    class Student
+    {
+        public int studentId;
+        public String studentName;
+        public Student(Student stu)
+        {
+            studentId = stu.studentId;
+            studentName = stu.studentName;
+        }
+        public Student(int studentId,String studentName)
+        {
+            this.studentId = studentId;
+            this.studentName = studentName;
+        }
+        public void printDetails()
+        {
+            Console.WriteLine("Student details: ");
+            Console.WriteLine("Student Id:"+studentId);
+            Console.WriteLine("Student Name:"+studentName);
+        }
+    }
+    class StudentMain
+    {
+        static void Main(string[] args)
+        {
+            Student stu1 = new Student(101,"Manoj");
+            Student stu2 = new Student(stu1);
+            stu2.printDetails();
+            Console.ReadLine();
+        }
+    }
+}

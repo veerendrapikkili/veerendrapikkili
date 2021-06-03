@@ -1,0 +1,45 @@
+ public interface IVehicle
+    {
+        void Drive();
+        bool Refuel(int amount);
+    }
+    public class Car: IVehicle
+    {
+        public int Fuel;
+        public Car(int Fuel)
+        {
+            this.Fuel = Fuel;
+        }
+        public void Drive()
+        {
+            if (Fuel > 0)
+            {
+                Console.WriteLine("Driving");
+            }
+            else
+            {
+                Console.WriteLine("No Fuel");
+            }
+        }
+        public bool Refuel(int amount)
+        {
+            Fuel = Fuel + amount;
+            return true;
+        }
+
+ 
+
+    }
+    class Class11
+    {
+        public static void Main()
+        {
+            Car car=new Car(0);
+            int fuel = int.Parse(Console.ReadLine());
+            if(car.Refuel(fuel))
+            {
+                car.Drive();
+            }
+            Console.ReadLine();
+        }
+    }

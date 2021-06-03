@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace cSharp
+{
+    class Student
+    {
+        public int studentId;
+        public String studentName;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+            Console.Write("Enter Student Id:");
+            s.studentId = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter Student Namae:");
+            s.studentName=Console.ReadLine();
+            Console.WriteLine("Student Id : "+s.studentId);
+            Console.WriteLine("Student Name: "+s.studentName);
+            Console.ReadLine();
+        }
+    }
+}

@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public struct Student
+    {
+        public String name;
+        public int rollnumber;
+        public int Marks;
+    }
+    class Class1
+    {
+        public static void Main()
+        {
+            Student s1;
+            Console.WriteLine("Enter name:");
+            s1.name = Console.ReadLine();
+            Console.WriteLine("Enter roll Number");
+            s1.rollnumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Marks: ");
+            s1.Marks= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Name: "+s1.name +"\nRoll Numnber: "+s1.rollnumber+"\nMarks: "+s1.Marks);
+            Console.ReadLine();
+        }
+
+    }
+}

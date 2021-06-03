@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+            Console.Write("Enter a string  : ");
+            string str = Console.ReadLine();
+            int count=0;
+            for (int i =0;i<str.Length;i++)
+            {
+                if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]=='o' || str[i]=='u' || str[i]=='A' || str[i]=='E' || str[i]=='I' || str[i]=='O' || str[i]=='U')
+				{
+					count=count+1;
+				}
+            }
+            Console.WriteLine("No of vowels are: "+count);
+            Console.ReadLine();
+        }
+    }

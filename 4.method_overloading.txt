@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Day_3
+{
+    class Class7
+    {
+        public static void Main()
+        {
+            Program p = new Program();
+            p.mul(2,3);
+            p.mul(3);
+            p.mul(2, 3, 1);
+            p.mul("manoj","Peethala");
+            Console.ReadLine();
+        }
+        
+    }
+    class Program
+    {
+        public void mul(int a, int b)
+        {
+            Console.WriteLine("The multiplication of  2 numbers is:"+(a*b ));
+        }
+ 
+        public void mul(int a,int b,int c)
+        {
+            Console.WriteLine("The multiplication of  3 numbers is:" + (a * b*c));
+        }
+        public void mul(int a)
+        {
+            Console.WriteLine("The multiplication of the  number with 2 is:" + (a * 2));
+        }
+        public void mul(String a, String b)
+           {
+            Console.WriteLine("The multiplication of  2 Strings is:" + (a +b));
+        }
+     
+    }
+  
+}
